@@ -1,0 +1,12 @@
+<ion-view cache-view="false" view-title="Check In">
+  <ion-content scroll="false">
+    <div>
+      <button ng-click="take_photo()" class="button">Take Photo</button>
+    </div>
+
+    <!-- default view -->
+    <div class="center" style="margin-top: 20%">
+      <img src="{{ imgSrc }}" height="200" style="{{ style }}" width="200" ng-if="(imgSrc != undefined) && (style != undefined)" />
+    </div>
+  </ion-content>
+</ion-view>
